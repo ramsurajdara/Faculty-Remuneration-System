@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html >
+<head>
+  	<meta charset="UTF-8">
+  	<title>Department Login</title>
+	<link rel="stylesheet" type="text/css" href="webstyle.css">    
+</head>
+<body style="background: url(Images/login1.jpg);">
+  <div class="login">
+	<h1>Department Login</h1>
+    <form method="post" name="loginDept" action="DeptLoginServ">
+    	<select name="dept">
+  			<option value="IT">Information Technology</option>
+		    <option value="CSE">Computer Sciences and Engineering</option>
+  			<option value="ECE">Electronic and Communication Engineering</option>
+  			<option value="MECH">Mechanical Engineering</option>
+  			<option value="EEE">Electronic and Electrical Engineering</option>
+  			<option value="CHEM">Chemical Engineering</option>
+  			<option value="CIV">Civil Engineering</option>
+		</select>
+        <input type="password" name="pswd" placeholder="Password" required="required"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large" value="Login" name="action">Login</button>
+    </form>
+</div>
+</body>
+</html>

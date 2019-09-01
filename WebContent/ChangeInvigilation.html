@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Change Invigilation</title>
+	<link rel="stylesheet" type="text/css" href="webstyle.css">
+	<link rel="stylesheet" type="text/css" href="webstyle2.css">
+</head>
+<body style="background: url(Images/bg4.jpg);">
+	<ul>	
+		<li><a href="Entry.html">Set Invigilation<br>Data</a></li>
+		<li><a href="FacultyRemunerationInvg.html">Invigilation Remuneration<br>Details</a></li>
+		<li><a href="FacultyRemunerationForm.html">Other Remuneration<br>Details</a></li>		
+		<li><a href="GetInvigilationData.html">Get Invigilation<br>Data</a></li>
+		<li><a href="ChangeInvigilation.html">Change Invigilation<br>Data</a></li>
+		<li><a href="Register.html">Register</a></li>
+		<li><a href="InvgBillUpdation.html">Pay Invigilation<br>Remuneration</a>
+		<li><a href="OtherBillUpdation.html">Pay Other<br>Remuneration</a>
+		<li style="float:right"><a href="LogoutServ"><img width='90' height='20' src="Images/logout2.png"></a></li>
+	</ul>
+	<div class="login">
+		<h1>CHANGE INVIGILATION</h1>
+		<form name="change" method="post" action="ChangeInvigilationServ">
+		<input type="date" name="dt">
+		<input type="text" placeholder="Enter time of invigilation:" name="tm">
+		<input type="text" placeholder="Room No:" name="room">
+		<input type="text" placeholder="Enter faculty id:" name="fid">
+		<input type="text" placeholder="Enter replacement faculty id:" name="rfid">
+		<input type="submit" value="Submit" name="action" class="btn btn-primary btn-block btn-large">
+		</form>
+	</div>
+</body>
+</html>

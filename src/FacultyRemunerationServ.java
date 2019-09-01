@@ -1,0 +1,70 @@
+
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class RemunerationServ
+ */
+@WebServlet("/RemunerationServ")
+public class FacultyRemunerationServ extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public FacultyRemunerationServ() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
+		String act=request.getParameter("action");
+		FacultyRemunerationDAO frd=new FacultyRemunerationDAO();		
+		int ack=0;
+		PrintWriter pw=response.getWriter();
+		if(act.equalsIgnoreCase("Submit"))
+		{
+			String id=request.getParameter("fid");
+			String bno=request.getParameter("billno");
+			String t=request.getParameter("type");
+			String val=request.getParameter("count");
+			try {
+				ack=frd.updateDetails(id,bno,t,val);
+				if(ack==1)
+					pw.println("<script>alert('Entry Success');location.href='FacultyRemunerationForm.html'</script>");
+				else if(ack==0)
+					pw.println("<script>alert('Entry Failure');location.href='FacultyRemunerationForm.html'</script>");
+				else
+					pw.println("<script>alert('DB Error');location.href='FacultyRemunerationForm.html'</script>");				
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+
+	}
+
+}

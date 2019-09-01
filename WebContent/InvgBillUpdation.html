@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="webstyle.css">
+	<link rel="stylesheet" type="text/css" href="webstyle2.css">
+	<meta charset="ISO-8859-1">
+	<title>Invigilation Remuneration Pay Status</title>
+</head>
+<body style="background: url(Images/bg4.jpg);">
+	<ul>	
+		<li><a href="Entry.html">Set Invigilation<br>Data</a></li>
+		<li><a href="FacultyRemunerationInvg.html">Invigilation Remuneration<br>Details</a></li>
+		<li><a href="FacultyRemunerationForm.html">Other Remuneration<br>Details</a></li>		
+		<li><a href="GetInvigilationData.html">Get Invigilation<br>Data</a></li>
+		<li><a href="ChangeInvigilation.html">Change Invigilation<br>Data</a></li>
+		<li><a href="Register.html">Register</a></li>
+		<li><a href="InvgBillUpdation.html">Pay Invigilation<br>Remuneration</a>
+		<li><a href="OtherBillUpdation.html">Pay Other<br>Remuneration</a>
+		<li style="float:right"><a href="LogoutServ"><img width='90' height='20' src="Images/logout2.png"></a></li>
+	</ul>
+	<div class="login">
+		<h1>INVIGILATION PAY STATUS UPDATION</h1>
+		<form method="post" action="UpdateInvgBillServ">
+			<input type="date" name="dt" placeholder="Enter date:(yyyy:mm:dd)" required="required">
+			<input type="submit" value="Update" class="btn btn-primary btn-block btn-large" name="action">
+		</form>
+	</div>
+</body>
+</html>

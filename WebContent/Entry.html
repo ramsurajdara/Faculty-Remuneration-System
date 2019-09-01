@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Entry</title>
+	<link rel="stylesheet" type="text/css" href="webstyle.css">
+	<link rel="stylesheet" type="text/css" href="webstyle2.css">
+</head>
+<body style="background: url(Images/bg4.jpg)">
+	<ul>	
+		<li><a href="Entry.html">Set Invigilation<br>Data</a></li>
+		<li><a href="FacultyRemunerationInvg.html">Invigilation Remuneration<br>Details</a></li>
+		<li><a href="FacultyRemunerationForm.html">Other Remuneration<br>Details</a></li>		
+		<li><a href="GetInvigilationData.html">Get Invigilation<br>Data</a></li>
+		<li><a href="ChangeInvigilation.html">Change Invigilation<br>Data</a></li>
+		<li><a href="Register.html">Register</a></li>
+		<li><a href="InvgBillUpdation.html">Pay Invigilation<br>Remuneration</a>
+		<li><a href="OtherBillUpdation.html">Pay Other<br>Remuneration</a>
+		<li style="float:right"><a href="LogoutServ"><img width='90' height='20' src="Images/logout2.png"></a></li>
+	</ul>
+	<div class="login">
+		<h1>SETTING INVIGILATION</h1>
+		<form name="Data" method="post" action="SetInvigilationServ">
+			<input type="date" name="dt" required="required" placeholder="yyyy-mm-dd">
+			<input type="text" name="time" placeholder="Enter exam time(xx:xx-xx:xx)" required="required">
+			<input type="text" name="roomno" placeholder="Enter room no" required="required">
+			<select name="dept1">
+				<option value="">--SELECT DEPT--</option>
+  				<option value="IT">Information Technology</option>
+		    	<option value="CSE">Computer Sciences and Engineering</option>
+  				<option value="ECE">Electronic and Communication Engineering</option>
+  				<option value="MECH">Mechanical Engineering</option>
+  				<option value="EEE">Electronic and Electrical Engineering</option>
+  				<option value="CHEM">Chemical Engineering</option>
+  				<option value="CIV">Civil Engineering</option>
+  			</select>
+  			<select name="dept2">
+  				<option value="">--SELECT DEPT--</option>
+  				<option value="IT">Information Technology</option>
+		    	<option value="CSE">Computer Sciences and Engineering</option>
+  				<option value="ECE">Electronic and Communication Engineering</option>
+  				<option value="MECH">Mechanical Engineering</option>
+  				<option value="EEE">Electronic and Electrical Engineering</option>
+  				<option value="CHEM">Chemical Engineering</option>
+  				<option value="CIV">Civil Engineering</option>
+  			</select>
+			<input type="Submit" value="Submit" class="btn btn-primary btn-block btn-large">
+		</form>
+	</div>
+</body>
+</html>
