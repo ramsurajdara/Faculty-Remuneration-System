@@ -1,2 +1,37 @@
-# Faculty-Remuneration-System
-This system enables us to maintain the complete details of the free slots of the faculty in order to organize them into the arranging of the invigilation’s. The pay is also automatically generated to the account maintained by them and for any queries to the faculty; they can get into the contact with the admin directly and get the data verified. This can be  2    done sitting in front of their personal pc within no time. The details can be printed and circulated to the faculty to get it verified whether they are attending that slot or not, if any change is required then the data  can changed by contacting the admin , this is also a simple work. So, this system is useful in multiple cases. 
+## Welcome to GitHub Pages
+
+You can use the [editor on GitHub](https://github.com/ramsurajdara/Faculty-Remuneration-System/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Markdown
+
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+
+```markdown
+Syntax highlighted code block
+
+# Header 1
+## Header 2
+### Header 3
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ramsurajdara/Faculty-Remuneration-System/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
